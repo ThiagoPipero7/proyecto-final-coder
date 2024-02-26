@@ -1,0 +1,66 @@
+@import "../base/variables";
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.producto{
+    border: 1px solid $border-color;
+    padding: 15px;
+    text-align: center;
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    h3{
+        margin-top: 10px;
+        color: black;
+        font-family: $font-family;
+    }
+
+    p{
+        font-family: ginebra;
+    }
+}
+
+
+#acerca-de-nosotros-main{
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.half-section{
+    width: 50%;
+    box-sizing: border-box;
+
+    h2{
+        font-family: cambria;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+
+    p{
+        font-size: 16px;
+        color: black;
+        margin-top: 10px;
+        font-family: didot;
+    }
+}
+
+.logo-container{
+    flex: 1;
+    text-align: center;
+
+    img{
+        max-width: 50%;
+        height: auto;
+    }
+}
+

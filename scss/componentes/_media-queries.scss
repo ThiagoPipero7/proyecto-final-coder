@@ -1,0 +1,282 @@
+@import "../base/variables";
+
+@media screen and (max-width: 600px) {
+    
+    header {
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav-izquierda ul, .nav-derecha ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+  
+      .nav-izquierda li, .nav-derecha li {
+        margin-right: 10px;
+      }
+
+      .nav-izquierda a, .nav-derecha a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+  
+      .logo img {
+        max-height: 80px;
+      }
+
+    }
+  
+    footer {
+      padding: 10px;
+      margin-top: 0;
+      color: black;
+      text-align: center;
+  
+      div div a img {
+        max-width: 25px;
+        max-height: 25px;
+      }
+    }
+
+    main{
+      padding: 20px;
+
+      .image-section{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+    }
+
+    .productos{
+      display: block;
+    }
+
+    .producto{
+      border: 1px solid $border-color;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 20px;
+
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+
+      h3{
+        margin-top: 10px;
+        font-size: 18px;
+      }
+
+      p{
+        font-size: 14px;
+      }
+    }
+
+    .half-section{
+      width: 100%;
+      box-sizing: border-box;
+  
+      h2{
+          font-size: 20px;
+          color: black;
+      }
+  
+      p{
+          font-size: 16px;
+          color: black;
+          margin-top: 10px;
+      }
+    }
+
+    .logo-container{
+      display: none;
+    }
+
+    h1{
+      font-size: 24px;
+    }
+
+    p{
+      font-size: 16px;
+    }
+
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1023px) {
+  
+    header {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav-izquierda ul, .nav-derecha ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+  
+      .nav-izquierda li, .nav-derecha li {
+        margin-right: 15px;
+      }
+
+      .nav-izquierda a, .nav-derecha a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+  
+      .logo img {
+        max-height: 100px;
+      }
+    }
+  
+    footer {
+      padding: 15px;
+      color: black;
+      text-align: center;
+  
+      div div a img {
+        max-width: 30px;
+        max-height: 30px;
+      }
+    }
+  
+    main {
+      padding: 30px;
+    }
+
+    .producto {
+      padding: 20px;
+      margin-bottom: 30px;
+      border: 2px solid $border-color;
+      border-radius: 10px;
+
+      h3{
+        font-size: 22px;
+        margin-top: 10px;
+      }
+
+      p{
+        font-size: 18px;
+        color: black;
+        margin-top: 10px;
+      }
+    }
+
+    .half-section{
+      width: 100%;
+      box-sizing: border-box;
+  
+      h2{
+          font-size: 20px;
+          color: black;
+      }
+  
+      p{
+          font-size: 16px;
+          color: black;
+          margin-top: 10px;
+      }
+    }
+
+    .logo-container{
+      display: none;
+    }
+
+    h1{
+      font-size: 30px;
+    }
+
+    p{
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    header {
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .nav-izquierda ul, .nav-derecha ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+  
+      .nav-izquierda li, .nav-derecha li {
+        margin-right: 20px;
+      }
+  
+      .nav-izquierda a, .nav-derecha a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+  
+      .logo img {
+        max-height: 120px;
+      }
+    }
+  
+    footer {
+      padding: 20px;
+      color: black;
+      text-align: center;
+  
+      div div a img {
+        max-width: 40px;
+        max-height: 40px;
+      }
+    }
+  
+    main {
+      padding: 50px;
+    }
+
+    .producto{
+      padding: 30px;
+      margin-bottom: 40px;
+      border: 2px solid $border-color;
+      border-radius: 10px;
+
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+
+      h3{
+        font-size: 24px;
+        margin-top: 15px;
+      }
+
+      p{
+        font-size: 20px;
+        color: black;
+        margin-top: 15px;
+      }
+    }
+
+    h1{
+      font-size: 32px;
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    p{
+      font-size: 22px;
+      color:black;
+      line-height: 1.5;
+    }
+  }

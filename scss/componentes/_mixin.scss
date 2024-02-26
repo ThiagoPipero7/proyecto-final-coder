@@ -1,0 +1,14 @@
+@mixin late-animacion {
+
+    @keyframes late {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.2);
+      }
+    }
+    
+    animation: late 1s infinite alternate;
+  }
+

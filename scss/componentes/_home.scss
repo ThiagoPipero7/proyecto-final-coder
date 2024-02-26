@@ -1,0 +1,115 @@
+@import "../base/variables";
+@import "mixin";
+
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo {
+      flex-grow: 1;
+      text-align: center;
+  
+      img {
+        max-height: 100px;
+        height: auto;
+        display: inline-block;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  
+    .nav-izquierda ul, .nav-derecha ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+  
+    .nav-izquierda li, .nav-derecha li {
+      margin-right: 20px;
+    }
+  
+    .nav-izquierda a, .nav-derecha a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  main {
+    text-align: center;
+    padding: 40px 20px;
+
+    .brand-section{
+      margin-bottom: 40px;
+
+      h1{
+        font-family: cambria;
+        margin-bottom: 10px;
+        color: black;
+      }
+
+      .subtitle{
+        font-family: didot;
+        color: black;
+      }
+    }
+
+    .image-section{
+      display: flex;
+      justify-content: space-between;
+
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .image-container{
+      text-align: center;
+      width: 30%;
+
+      img{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 30px;
+      }
+    }
+  }
+  
+  footer {
+    background-color: $primary-color;
+    color: black;
+    padding: 20px;
+  
+    div div a img {
+      max-width: 35px;
+      max-height: 35px;
+  
+      @include late-animacion;
+    }
+
+    .sitemap {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sitemap li {
+      margin-bottom: 10px;
+    }
+
+    .sitemap a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+}

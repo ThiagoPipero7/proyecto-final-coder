@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: arial;
+  background-color: rgba(218, 192, 110, 0.253);
+}
+
+header {
+  background-color: rgba(255, 166, 0, 0.5058823529);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  flex-grow: 1;
+  text-align: center;
+}
+header .logo img {
+  max-height: 100px;
+  height: auto;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+header .logo img:hover {
+  transform: scale(1.1);
+}
+header .nav-izquierda ul, header .nav-derecha ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+header .nav-izquierda li, header .nav-derecha li {
+  margin-right: 20px;
+}
+header .nav-izquierda a, header .nav-derecha a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  text-align: center;
+  padding: 40px 20px;
+}
+main .brand-section {
+  margin-bottom: 40px;
+}
+main .brand-section h1 {
+  font-family: cambria;
+  margin-bottom: 10px;
+  color: black;
+}
+main .brand-section .subtitle {
+  font-family: didot;
+  color: black;
+}
+main .image-section {
+  display: flex;
+  justify-content: space-between;
+}
+main .image-section a {
+  text-decoration: none;
+  color: black;
+}
+main .image-container {
+  text-align: center;
+  width: 30%;
+}
+main .image-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
+footer {
+  background-color: rgba(255, 166, 0, 0.5058823529);
+  color: black;
+  padding: 20px;
+}
+footer div div a img {
+  max-width: 35px;
+  max-height: 35px;
+  animation: late 1s infinite alternate;
+}
+@keyframes late {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+footer .sitemap {
+  list-style: none;
+  padding: 0;
+}
+footer .sitemap li {
+  margin-bottom: 10px;
+}
+footer .sitemap a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.producto {
+  border: 1px solid goldenrod;
+  padding: 15px;
+  text-align: center;
+}
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
+.producto h3 {
+  margin-top: 10px;
+  color: black;
+  font-family: arial;
+}
+.producto p {
+  font-family: ginebra;
+}
+
+#acerca-de-nosotros-main {
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.half-section {
+  width: 50%;
+  box-sizing: border-box;
+}
+.half-section h2 {
+  font-family: cambria;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.half-section p {
+  font-size: 16px;
+  color: black;
+  margin-top: 10px;
+  font-family: didot;
+}
+
+.logo-container {
+  flex: 1;
+  text-align: center;
+}
+.logo-container img {
+  max-width: 50%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .nav-izquierda ul, header .nav-derecha ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  header .nav-izquierda li, header .nav-derecha li {
+    margin-right: 10px;
+  }
+  header .nav-izquierda a, header .nav-derecha a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  header .logo img {
+    max-height: 80px;
+  }
+  footer {
+    padding: 10px;
+    margin-top: 0;
+    color: black;
+    text-align: center;
+  }
+  footer div div a img {
+    max-width: 25px;
+    max-height: 25px;
+  }
+  main {
+    padding: 20px;
+  }
+  main .image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productos {
+    display: block;
+  }
+  .producto {
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .producto img {
+    max-width: 100%;
+    height: auto;
+  }
+  .producto h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .producto p {
+    font-size: 14px;
+  }
+  .half-section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .half-section h2 {
+    font-size: 20px;
+    color: black;
+  }
+  .half-section p {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+  }
+  .logo-container {
+    display: none;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .nav-izquierda ul, header .nav-derecha ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  header .nav-izquierda li, header .nav-derecha li {
+    margin-right: 15px;
+  }
+  header .nav-izquierda a, header .nav-derecha a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  header .logo img {
+    max-height: 100px;
+  }
+  footer {
+    padding: 15px;
+    color: black;
+    text-align: center;
+  }
+  footer div div a img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  main {
+    padding: 30px;
+  }
+  .producto {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+  }
+  .producto h3 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  .producto p {
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+  }
+  .half-section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .half-section h2 {
+    font-size: 20px;
+    color: black;
+  }
+  .half-section p {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+  }
+  .logo-container {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .nav-izquierda ul, header .nav-derecha ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  header .nav-izquierda li, header .nav-derecha li {
+    margin-right: 20px;
+  }
+  header .nav-izquierda a, header .nav-derecha a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  header .logo img {
+    max-height: 120px;
+  }
+  footer {
+    padding: 20px;
+    color: black;
+    text-align: center;
+  }
+  footer div div a img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  main {
+    padding: 50px;
+  }
+  .producto {
+    padding: 30px;
+    margin-bottom: 40px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+  }
+  .producto img {
+    max-width: 100%;
+    height: auto;
+  }
+  .producto h3 {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .producto p {
+    font-size: 20px;
+    color: black;
+    margin-top: 15px;
+  }
+  h1 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 22px;
+    color: black;
+    line-height: 1.5;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
